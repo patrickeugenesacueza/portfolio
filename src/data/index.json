@@ -8,13 +8,13 @@
         },
         {
             "id": "2",
-            "src": "/front-end.png",
+            "src": "/ux-design.png",
             "title": "Mobile Developer",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
         },
         {
             "id": "3",
-            "src": "/front-end.png",
+            "src": "/trouble-shooting.png",
             "title": "Trouble shooting",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
         }
