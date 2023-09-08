@@ -1,22 +1,22 @@
 {
-    "skills":[
+    "skills": [
         {
             "id": "1",
-            "src": "./img/front_end.svg",
-            "title":"Front-End",
-            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+            "src": "/front-end.png",
+            "title": "Front-End",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
         },
         {
             "id": "2",
-            "src": "./img/mobile_developer.svg",
-            "title":"Mobile Developer",
-            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+            "src": "/front-end.png",
+            "title": "Mobile Developer",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
         },
         {
             "id": "3",
-            "src": "./img/trouble_shooting.svg",
-            "title":"Trouble shooting",
-            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+            "src": "/front-end.png",
+            "title": "Trouble shooting",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
         }
     ]
 }
