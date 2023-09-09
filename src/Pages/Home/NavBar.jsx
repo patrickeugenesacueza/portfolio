@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 function Navbar() {
@@ -15,7 +15,7 @@ function Navbar() {
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth <= 500) {
-                closeMenu(); // Call the closeMenu function
+                closeMenu(); // Call the closeMenu function by adding ()
             }
         };
 
@@ -26,71 +26,99 @@ function Navbar() {
         };
     }, []);
 
+    useEffect(() => {
+        if (window.innerWidth <= 1200) {
+            closeMenu(); // Call the closeMenu function by adding ()
+        }
+    }, []);
+
+
     return (
         <nav className={`navbar ${navActive ? "active" : ""}`}>
             <div>
-                <img src="/default-resize.png" alt="Logo" width={'187px'} height={'40px'} />
+                <img src="/default-resize.png" alt="Logoipsum" width={187} height={40} />
             </div>
-            <a className={`nav__hamburger ${navActive ? "active" : ""}`} onClick={toggleNav}>
-                <span className="nav__hamburger__line"> </span>
-                <span className="nav__hamburger__line"> </span>
-                <span className="nav__hamburger__line"> </span>
+            <a
+                className={`nav__hamburger ${navActive ? "active" : ""}`}
+                onClick={toggleNav}
+            >
+                <span className="nav__hamburger__line"></span>
+                <span className="nav__hamburger__line"></span>
+                <span className="nav__hamburger__line"></span>
             </a>
             <div className={`navbar--items ${navActive ? "active" : ""}`}>
                 <ul>
                     <li>
-                        <Link onClick={closeMenu}
+                        <Link
+                            onClick={closeMenu}
                             activeClass="navbar--active-content"
                             spy={true}
                             smooth={true}
                             offset={-70}
                             duration={500}
                             to="heroSection"
-                            className="navbar--content">Home</Link>
+                            className="navbar--content"
+                        >
+                            Home
+                        </Link>
                     </li>
-
                     <li>
-                        <Link onClick={closeMenu}
-                            activeClass="navbar--active-content"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                            to="MyPortfolio"
-                            className="navbar--content">Portfolio</Link>
-                    </li>
-
-                    <li>
-                        <Link onClick={closeMenu}
+                        <Link
+                            onClick={closeMenu}
                             activeClass="navbar--active-content"
                             spy={true}
                             smooth={true}
                             offset={-70}
                             duration={500}
                             to="AboutMe"
-                            className="navbar--content">About Me</Link>
+                            className="navbar--content"
+                        >
+                            About Me
+                        </Link>
                     </li>
-
                     <li>
-                        <Link onClick={closeMenu}
+                        <Link
+                            onClick={closeMenu}
                             activeClass="navbar--active-content"
                             spy={true}
                             smooth={true}
                             offset={-70}
                             duration={500}
-                            to="Testimonials"
-                            className="navbar--content">Testimonials</Link>
+                            to="MyPortfolio"
+                            className="navbar--content"
+                        >
+                            Portfolio
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link
+                            onClick={closeMenu}
+                            activeClass="navbar--active-content"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            to="testimonial"
+                            className="navbar--content"
+                        >
+                            Testimonials
+                        </Link>
                     </li>
                 </ul>
             </div>
-            <Link onClick={closeMenu} 
+            <Link
+                onClick={closeMenu}
                 activeClass="navbar--active-content"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
                 to="Contact"
-                className="btn btn-outline-primary">Contact Me</Link>
+                className="btn btn-outline-primary"
+            >
+                Contact Me
+            </Link>
         </nav>
     );
 }

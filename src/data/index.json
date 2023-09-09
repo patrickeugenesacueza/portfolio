@@ -18,5 +18,54 @@
             "title": "Trouble shooting",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
         }
+    ],
+    "portfolio": [
+        {
+            "id": "1",
+            "src": "/tupCare_picture.png",
+            "title": "TUP Care",
+            "description": "Description for TUP Care"
+        },
+        {
+            "id": "2",
+            "src": "/biometrics_picture.png",
+            "title": "Biometrics Streaming",
+            "description": "Description for Biometrics Streaming"
+        },
+        {
+            "id": "3",
+            "src": "/tupCare_picture.png",
+            "title": "FitBuddy App",
+            "description": "Description for FitBuddy App"
+        }
+    ],
+    "testimonial": [
+        {
+            "id": "1",
+            "count": "5",
+            "src": "/avatar_three.png",
+            "title": "Testi 1",
+            "description": "Description for TUP Care",
+            "author_name": "Don MineHeart T. Tadle",
+            "author_description": "All goods for me, Thanks!"
+        },
+        {
+            "id": "2",
+            "src": "/avatar_three.png",
+            "count": "5",
+            "title": "Testi 2",
+            "description": "Description for Biometrics Streaming",
+            "author_name": "Don MineHeart T. Tadle",
+            "author_description": "All goods for me, Thanks!"
+        },
+        {
+            "id": "3",
+            "src": "/avatar_three.png",
+            "count": "5",
+            "title": "Testi 3",
+            "description": "Description for FitBuddy App",
+            "author_name": "Don MineHeart T. Tadle",
+            "author_description": "All goods for me, Thanks!"
+        }
     ]
 }
